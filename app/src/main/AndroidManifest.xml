@@ -16,7 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalendarActivity"></activity>
+        <activity
+            android:name=".CalendarDisplay"
+            android:label="@string/title_activity_calendar_display"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PlansList"
+            android:label="@string/title_activity_plans_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
