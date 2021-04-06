@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class PlansList extends AppCompatActivity {
 
     public final static String EXTRA_DATE = "DATE";

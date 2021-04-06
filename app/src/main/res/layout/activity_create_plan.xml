@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".CreatePlan" >
+
+
+    <TextView
+        android:id="@+id/dateYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Give Your Plan a Name"/>
+    <EditText
+        android:id="@+id/detailsField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Plan Details"/>
+    <Button
+        android:id="@+id/getPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:onClick="setTime"/>
+    <TimePicker
+        android:id="@+id/setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>"
+    <Button
+        android:id="@+id/storePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Plan"
+        android:onClick="onClick"/>"
+
+
+</android.support.constraint.ConstraintLayout>
