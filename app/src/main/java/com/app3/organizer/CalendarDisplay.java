@@ -43,7 +43,7 @@ public class CalendarDisplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_display);
 
-        setupActionBar();
+        //setupActionBar();
 
         Intent intent = getIntent();
         int a = intent.getIntExtra(MainActivity_o.EXTRA_YEAR, 0);
@@ -90,12 +90,12 @@ public class CalendarDisplay extends AppCompatActivity {
     }
 
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+   /*@TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void setupActionBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             getActionBar().setDisplayHomeAsUpEnabled(true);
         }
-    }
+    }*/
 
 
     @Override

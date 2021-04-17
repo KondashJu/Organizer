@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calendar_display"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
+    android:padding="16dp"
     tools:context=".CalendarDisplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/displayInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <GridView
         android:id="@+id/daysView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:numColumns="7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <GridView
         android:id="@+id/calendarView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:numColumns="7"/>"
+        android:numColumns="7"/>
 
-</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</LinearLayout>
