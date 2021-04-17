@@ -32,7 +32,7 @@ public class PlansList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plans_list);
-        setupActionBar();
+        //setupActionBar();
 
         datasource = new PlansDataSource(this);
         datasource.open();
@@ -68,12 +68,12 @@ public class PlansList extends AppCompatActivity {
     }
 
 
-   @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+   /*@TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void setupActionBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             getActionBar().setDisplayHomeAsUpEnabled(true);
         }
-    }
+    }*/
 
 
 }
