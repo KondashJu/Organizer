@@ -1,5 +1,6 @@
 package com.app3.organizer;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.widget.DatePicker;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 
+import java.lang.reflect.Field;
 import java.util.Date;
 import java.util.Calendar;
 
@@ -47,10 +49,12 @@ public class MainActivity_o extends AppCompatActivity {
         showDialog(DATE_DIALOG_ID);
     }
 
+
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
             case DATE_DIALOG_ID:
+
                 return new DatePickerDialog(this, datePickerListener, year, month, day);
 
         }
