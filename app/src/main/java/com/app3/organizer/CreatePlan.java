@@ -41,9 +41,6 @@ public class CreatePlan extends AppCompatActivity {
         showDate.setText("New Plan For " + a + " " + b + ", " + d);
     }
 
-    public void setTime(View v) {
-        showDialog(TIME_DIALOG_ID);
-    }
 
     @Override
     protected Dialog onCreateDialog(int id) {
@@ -94,10 +91,5 @@ public class CreatePlan extends AppCompatActivity {
     }
 
 
-   /* @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-    }*/
+
 }

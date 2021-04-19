@@ -6,68 +6,73 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
     tools:context=".CreatePlan">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/dateYear"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/dateYear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#0a0057"
+            android:textSize="16dp" />
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/nameField"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="Give Your Plan a Name"/>
+
+        <EditText
+            android:id="@+id/nameField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Назва плану" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/detailsField"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Plan Details"/>
+
+        <EditText
+            android:id="@+id/detailsField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Деталі плану" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TimePicker
+            android:id="@+id/setTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:headerBackground="#330085" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/getPicker"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Set Time"
-        android:onClick="setTime"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <TimePicker
-        android:id="@+id/setTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>"
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/storePlan"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Save Plan"
-        android:onClick="onClick"/>"
+        <Button
+            android:id="@+id/storePlan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/roundebutton"
+            android:onClick="onClick"
+            android:padding="16dp"
+            android:text="Зберегти"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
     </LinearLayout>
 
 
