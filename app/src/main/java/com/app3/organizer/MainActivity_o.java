@@ -25,7 +25,6 @@ public class MainActivity_o extends AppCompatActivity {
     public final static String EXTRA_MONTH = "MONTH";
     public final static String EXTRA_YEAR = "YEAR";
 
-    static final int DATE_DIALOG_ID = 999;
     private int month, day, year;
     DatePicker datePicker;
     Button setMonth;
@@ -43,22 +42,6 @@ public class MainActivity_o extends AppCompatActivity {
 
         datePicker.init(year, month, day, null);
 
-    }
-
-    public void onClick(View v) {
-        showDialog(DATE_DIALOG_ID);
-    }
-
-
-    @Override
-    protected Dialog onCreateDialog(int id) {
-        switch (id) {
-            case DATE_DIALOG_ID:
-
-                return new DatePickerDialog(this, datePickerListener, year, month, day);
-
-        }
-        return null;
     }
 
     private DatePickerDialog.OnDateSetListener datePickerListener = new

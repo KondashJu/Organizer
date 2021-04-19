@@ -10,17 +10,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    <Button
-        android:id="@+id/setMonth"
-        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:text="Select Month"/>
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Оберіть місяць та рік"
+            android:textColor="#000000"
+            android:textSize="20dp" />
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,8 +33,10 @@
             android:id="@+id/monthSelector"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:theme="@android:style/Theme.Holo.Light"
-            android:calendarViewShown="false" />
+            android:layout_marginTop="16dp"
+            android:calendarViewShown="false"
+            android:headerBackground="#330085"
+            android:theme="@android:style/Theme.Holo.Light" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,10 +47,13 @@
             android:id="@+id/getMonth"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundebutton"
             android:onClick="onClick2"
-            android:text="Go!"/>
+            android:text="Перейти"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
     </LinearLayout>
-
 
 
 </LinearLayout>

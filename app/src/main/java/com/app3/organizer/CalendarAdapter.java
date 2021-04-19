@@ -41,12 +41,11 @@ public class CalendarAdapter extends ArrayAdapter<Button> {
         int y = mdh.getFirstDayOfMonth();
         int n = mdh.getNumberOfDaysInMonth();
         button = (Button) convertView.findViewById(R.id.dateButton);
-        if ((position+1)<y || (position+1)> (y+n-1)) {
+        if ((position+2)<y || (position+2)> (y+n-1)) {
             button.setText("");
-            //button.setBackgroundResource(R.color.white);
         } else {
-            button.setText(Integer.toString(position-y+2));
-            button.setTag(position-y+2);
+            button.setText(Integer.toString(position-y+3));
+            button.setTag(position-y+3);
         }
 
 

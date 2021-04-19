@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Organizer</string>
-    <string name="title_activity_calendar_display">CalendarDisplay</string>
-    <string name="title_activity_plans_list">PlansList</string>
+    <string name="app_name">Електронний Органайзер</string>
+    <string name="title_activity_calendar_display">Календар</string>
+    <string name="title_activity_plans_list">Список планів</string>
 </resources>

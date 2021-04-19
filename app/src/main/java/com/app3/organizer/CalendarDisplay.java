@@ -1,6 +1,5 @@
 package com.app3.organizer;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -33,17 +32,16 @@ public class CalendarDisplay extends AppCompatActivity {
     GridView calendarView;
     static int a, b;
 
-    String[] months = new String[]{"January", "February", "March", "April", "May", "June",   "July",
-            "August", "September", "October", "November", "December"};
+    String[] months = new String[]{"January | Січень", "February | Лютий", "March | Березень", "April | Квітень", "May | Травень", "June | Червень",   "July | Липень",
+            "August | Серпень", "September | Вересень", "October | Жовтень", "November | Листопад", "December | Грудень"};
 
-    String[] days = new String[]{"Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"};
+    String[] days = new String[]{"Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Нд"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_display);
 
-        //setupActionBar();
 
         Intent intent = getIntent();
         int a = intent.getIntExtra(MainActivity_o.EXTRA_YEAR, 0);
@@ -88,14 +86,6 @@ public class CalendarDisplay extends AppCompatActivity {
         startActivity(intent1);
 
     }
-
-
-   /*@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-    }*/
 
 
     @Override
